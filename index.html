@@ -3,12 +3,12 @@
   <div id="my-element-2">Drag me too!</div>
 
   <script type="module">
-    import DraggableResizable from './src/draggable_resizable.js';
+    import DraggDeez from './src/dragg_deez.js';
 
     const elements = [document.getElementById('my-element'), document.getElementById('my-element-2')];
 
     elements.forEach(element => {
-      new DraggableResizable(element, {
+      new DraggDeez(element, {
         onDragStart: () => console.log('Drag started'),
         onDragEnd: () => console.log('Drag ended'),
         onResizeStart: () => console.log('Resize started'),
