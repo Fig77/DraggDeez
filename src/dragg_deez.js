@@ -1,4 +1,4 @@
-class DraggableResizable {
+class DraggDeez {
   constructor(element, options = {}) {
     this.element = element;
     this.options = options;
@@ -267,4 +267,4 @@ class DraggableResizable {
   }
 }
 
-export default DraggableResizable;
+export default DraggDeez;
