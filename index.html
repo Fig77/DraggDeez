@@ -1,0 +1,22 @@
+<body>
+  <div id="my-element">Drag me!</div>
+  <div id="my-element-2">Drag me too!</div>
+
+  <script type="module">
+    import DraggableResizable from './src/draggable_resizable.js';
+
+    const elements = [document.getElementById('my-element'), document.getElementById('my-element-2')];
+
+    elements.forEach(element => {
+      new DraggableResizable(element, {
+        onDragStart: () => console.log('Drag started'),
+        onDragEnd: () => console.log('Drag ended'),
+        onResizeStart: () => console.log('Resize started'),
+        onResizeEnd: () => console.log('Resize ended'),
+        onDrag: (position) => console.log('Dragging to', position),
+        onResize: (size) => console.log('Resizing to', size),
+      });
+    });
+  </script>
+</body>
+
