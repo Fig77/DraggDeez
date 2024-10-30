@@ -1,3 +1,6 @@
+// TODO: optional resize
+// write test
+
 class DraggDeez {
   constructor(element, options = {}) {
     this.element = element;
@@ -26,7 +29,6 @@ class DraggDeez {
     this.createHandles();
     document.body.appendChild(this.overlay);
 
-    // Event bindings
     this.overlay.addEventListener('mousedown', this.onOverlayMouseDown.bind(this));
     window.addEventListener('scroll', this.updateOverlayPosition.bind(this));
     window.addEventListener('resize', this.updateOverlayPosition.bind(this));
@@ -148,8 +150,6 @@ class DraggDeez {
     let newLeft = this.originalRect.left + deltaX;
     let newTop = this.originalRect.top + deltaY;
 
-    // Optional: Add boundary checks here
-
     this.element.style.position = 'absolute';
     this.element.style.left = `${newLeft}px`;
     this.element.style.top = `${newTop}px`;
@@ -235,7 +235,6 @@ class DraggDeez {
         coords.left += deltaX;
         coords.top += deltaY;
         break;
-      // Add cases for 'n', 'e', 's', 'w' if needed
     }
   }
 
