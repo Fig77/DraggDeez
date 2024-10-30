@@ -1,7 +1,7 @@
 
 # DraggDeez
 
-A simple, modular JavaScript class to make any HTML element draggable and resizable. This utility was abstracted from a personal project implementation and is currently under development.
+A simple, modular JavaScript class to make any HTML element draggable and resizable. This utility was abstracted from a personal project implementation and is currently under **development** so not properly **tested** and currently, will probably **break stuff**.
 
 ## Introduction
 
